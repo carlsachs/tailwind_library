@@ -1,19 +1,28 @@
 import React from "react";
 import tw from "twin.macro";
+import { Link, NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { css } from "styled-components/macro";
 
-const Container = tw.div`relative bg-gray-900 text-blue-400 h-full -mx-8 -mb-8 px-8`;
-const Top = tw.div`max-w-screen-xl mx-auto pt-4 pb-4`;
-const Text = tw.text`text-blue-400 flex justify-center w-full border-red-200`;
+const Container = tw.div`relative bg-gray-900 text-blue-400 h-full -mx-8 -mb-8 px-8 flex justify-center`;
+const Navs = tw.div`max-w-screen-xl pt-4 pb-4 space-x-24`;
+const MainButton = tw.button`border-2 border-blue-700 w-32 px-4 py-2 rounded hocus:border-opacity-50 hocus:border-blue-400 hocus:text-blue-200`;
+
+const NavigationLink = tw.a`text-blue-400 hocus:cursor-pointer hocus:text-blue-200`;
 
 export default () => {
 
     return (
         <Container>
-            <LogoArea>
-                <Text>This is the Top</Text>
-            </LogoArea>
+            <Navs>
+                <NavigationLink to="/">Home</NavigationLink>
+                <NavigationLink to="/">Team</NavigationLink>
+                <NavigationLink to="/">Work</NavigationLink>
+                <NavigationLink to="/">Pricing</NavigationLink>
+                <NavigationLink to="/">Contact</NavigationLink>
+                <MainButton>Order Now</MainButton>
+                <MainButton>Login</MainButton>
+            </Navs>
         </Container>
     )
 }
