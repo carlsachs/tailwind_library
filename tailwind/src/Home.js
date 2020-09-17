@@ -17,7 +17,6 @@ export default () => {
     return (
         <Container>
         <ComponentAnimation>
-            <Header />
             <Cards1 />
         </ComponentAnimation>
         </Container>
