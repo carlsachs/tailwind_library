@@ -19,7 +19,7 @@ export default () => {
         <ComponentAnimation>
             <Header />
             <Cards1 />
-            </ComponentAnimation>
+        </ComponentAnimation>
         </Container>
     )
 }
