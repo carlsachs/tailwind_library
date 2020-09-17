@@ -9,7 +9,7 @@ const Container = tw.div`relative bg-gray-500 text-blue-900 h-full -mx-8 -mb-8 p
 const TwoColumnWrap = tw.div`flex flex-row lg:items-center max-w-screen-xl mx-auto py-10 md:py-10 space-x-64`;
 const ColumnOne = tw.div``;
 const ColumnTwo = tw.div``;
-const Img = tw.img``;
+const Img = tw.img`absolute inset-0 h-full w-full object-cover object-center`;
 
 export default () => {
 
